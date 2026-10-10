@@ -1,0 +1,105 @@
+/* Estilos del mini catálogo (iguales en Vite, React, Vue y Angular) */
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f6f7f9;
+  color: #222;
+}
+ 
+.encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: #222;
+  color: #fff;
+}
+ 
+.encabezado h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+ 
+.carrito {
+  background: #e76f51;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+ 
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+ 
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+ 
+.filtros button {
+  border: 1px solid #222;
+  background: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+ 
+.filtros button.activo {
+  background: #222;
+  color: #fff;
+}
+ 
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+ 
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  height: 100%;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+ 
+.tarjeta .categoria {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #777;
+  text-transform: capitalize;
+}
+ 
+.tarjeta h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+ 
+.tarjeta .precio {
+  margin: 0;
+  font-weight: 700;
+}
+ 
+.tarjeta button {
+  margin-top: auto;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 0.4rem;
+  background: #e76f51;
+  color: #fff;
+  cursor: pointer;
+}
